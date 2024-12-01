@@ -1,7 +1,10 @@
 import { fileURLToPath, URL } from 'node:url'
 
-import UnoCSS from 'unocss/vite'
 import { defineConfig } from 'vite'
+import AutoImport from 'unplugin-auto-import/vite'
+import Components from 'unplugin-vue-components/vite'
+import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'
+import UnoCSS from 'unocss/vite'
 import vue from '@vitejs/plugin-vue'
 import vueJsx from '@vitejs/plugin-vue-jsx'
 import { VitePWA } from 'vite-plugin-pwa'
@@ -14,6 +17,12 @@ export default defineConfig({
     vue(),
     vueJsx(),
     UnoCSS(),
+    AutoImport({
+      resolvers: [ElementPlusResolver()],
+    }),
+    Components({
+      resolvers: [ElementPlusResolver()],
+    }),
     VitePWA({
       registerType: 'autoUpdate',
       scope: base,

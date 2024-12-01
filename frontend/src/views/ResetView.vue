@@ -1,7 +1,8 @@
 <script setup lang="ts">
 import { computed, ref } from 'vue';
 
-import { useFormExam, type CustomFormData } from '@/composables/FormExam';
+import { useFormExam } from '@/composables/FormExam';
+import { type CustomFormData } from '@/model/CustomFormData'
 
 import FormContainer from '@/components/FormContainer.vue';
 

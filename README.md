@@ -48,7 +48,7 @@ SHEET_TO_SHEET：存放表与表之间的关系。对于可能多项的数据，
     增加行：传入 SHEET_ID 与特定的数据结构，与接收 excel 数据类似  
     查看表：传入 SHEET_ID，根据 SHEET_ID 查看  
     删除表：传入 SHEET_ID，根据 SHEET_ID 删除  
-    修改表：传入 SHEET_ID 与需要修改的行与列以及新值
+    修改表：传入 SHEET_ID 与需要修改的行与列以及新值  
 
 前端：vue3   
 后端：go/gin                
